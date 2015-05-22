@@ -5,6 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaBudgetCalculator", "AreaBudgetCalculator\AreaBudgetCalculator.csproj", "{2119792E-1C8B-490B-B3B8-95403FAB4C58}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{9ECF2707-E16B-420A-8867-47C3EA5584D8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{4C029AAD-B85C-4A0A-96F2-DB7BCEE7B8D5}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\AreaBudgetCalculator-WAWS-dev.json = PublishScripts\Configurations\AreaBudgetCalculator-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C029AAD-B85C-4A0A-96F2-DB7BCEE7B8D5} = {9ECF2707-E16B-420A-8867-47C3EA5584D8}
 	EndGlobalSection
 EndGlobal
