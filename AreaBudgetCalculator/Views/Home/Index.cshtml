@@ -2,3 +2,19 @@
     ViewBag.Title = "Area Budget Calculator";
 }
 
+<article>
+    <form id="calculationForm" action="">
+        <div id="totalArea">
+            <label for="totalAreaInput">Total area</label><input type="number" id="totalAreaInput" /><br />
+        </div>
+        <div id="areasPlaceholder"></div>
+        <button id="addAreaButton" type="button">Add area</button>
+        <label id="output" />
+
+    </form>
+</article>
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/AreaCalculator.js")
+}
